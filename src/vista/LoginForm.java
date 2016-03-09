@@ -5,6 +5,8 @@
  */
 package vista;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author alum.fial1
@@ -77,6 +79,9 @@ public class LoginForm extends javax.swing.JFrame {
             r= Math.sqrt(a);
             txtn.setText(""+r);
         } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Ingresar un número...!");
+            txtn.setText(null);
+            txtn.requestFocus();
         }
         
     }//GEN-LAST:event_btncalcularActionPerformed
